@@ -1,0 +1,25 @@
+server:
+  port: 9000
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          lowerCaseServiceId: true
+      routes:
+        -   id: pf-web-api
+            uri: lb://pf-web-api
+            predicates:
+              - Path=/webapi/**
+com:
+  learn:
+    jwt:
+      #跳过认证的路由
+      skip-auth-urls:
+        - /webapi/v1/auth_user/login
+eureka:
+  instance:
+    lease-expiration-duration-in-seconds: 15
+    lease-renewal-interval-in-seconds: 5
+  client:
+    registry-fetch-interval-seconds: 5
