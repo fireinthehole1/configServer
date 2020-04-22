@@ -1,0 +1,31 @@
+server:
+  port: 7970
+spring:
+  mvc:
+    static-path-pattern: /**
+  redis:
+    database: 4
+    host: 10.1.10.111
+    jedis:
+      pool:
+        max-idle: 8
+        max-wait: ''
+        min-idle: 0
+    password: ''
+    port: 6379
+  resources:
+    static-locations: classpath:/static/
+tm:
+  compensate:
+    auto: false
+    maxWaitTime: 5000
+    tryTime: 30
+  redis:
+    savemaxtime: 30
+  socket:
+    maxconnection: 100
+    port: 7070
+  transaction:
+    netty:
+      delaytime: 5
+      hearttime: 15
