@@ -7,6 +7,14 @@ spring:
         multipart:
             max-file-size: -1
             max-request-size: 100MB
+    datasource:
+        druid:
+            db-type: com.alibaba.druid.pool.DruidDataSource
+            max-active: 20
+            filters: stat
+            url: jdbc:mysql://127.0.0.1/order-test?useSSL=false&useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&useAffectedRows=true
+            username: root
+            password: password
 feign:
     hystrix:
         enabled: true
