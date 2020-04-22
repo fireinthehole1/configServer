@@ -12,7 +12,7 @@ spring:
             db-type: com.alibaba.druid.pool.DruidDataSource
             max-active: 20
             filters: stat
-            url: jdbc:mysql://127.0.0.1/order-test?useSSL=false&useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&useAffectedRows=true
+            url: jdbc:mysql://127.0.0.1:3306/user-test?useSSL=false&useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&useAffectedRows=true
             username: root
             password: password
 feign:
