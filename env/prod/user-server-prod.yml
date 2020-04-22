@@ -1,0 +1,30 @@
+server:
+  port: 8203
+  servlet:
+    path: /
+spring:
+  datasource:
+    druid:
+      db-type: com.alibaba.druid.pool.DruidDataSource
+      max-active: 20
+      filters: stat
+      url: jdbc:mysql://127.0.0.1:3306/user-test?useSSL=false&useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull
+      username: root
+      password: password
+mybatis-plus:
+  mapper-locations[0]: classpath*:**/mapper/**/*Mapper.xml
+feign:
+  hystrix:
+    enabled: true
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          strategy: SEMAPHORE
+          thread:
+            timeoutInMilliseconds: 10000
+ribbon:
+  MaxAutoRetriesNextServer: 0
+  ReadTimeout: 10000
+  ConnectTimeout: 10000
