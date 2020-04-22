@@ -1,0 +1,30 @@
+server:
+    port: 9002
+    servlet:
+        path: /
+spring:
+    servlet:
+        multipart:
+            max-file-size: -1
+            max-request-size: 100MB
+feign:
+    hystrix:
+        enabled: true
+hystrix:
+    command:
+        default:
+            execution:
+                isolation:
+                    strategy: SEMAPHORE
+                    thread:
+                        timeoutInMilliseconds: 10000
+ribbon:
+    MaxAutoRetriesNextServer: 0
+    ReadTimeout: 10000
+    ConnectTimeout: 10000
+eureka:
+    instance:
+        lease-expiration-duration-in-seconds: 15
+        lease-renewal-interval-in-seconds: 5
+    client:
+        registry-fetch-interval-seconds: 5

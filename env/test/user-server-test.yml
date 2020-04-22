@@ -1,5 +1,5 @@
 server:
-  port: 8203
+  port: 9004
   servlet:
     path: /
 spring:
