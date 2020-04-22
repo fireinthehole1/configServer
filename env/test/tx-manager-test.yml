@@ -20,6 +20,7 @@ tm:
     auto: false
     maxWaitTime: 5000
     tryTime: 30
+    notifyUrl: http://127.0.0.1:8081/demo/notifyResult
   redis:
     savemaxtime: 30
   socket:

@@ -19,6 +19,7 @@ tm:
   compensate:
     auto: false
     maxWaitTime: 5000
+    notifyUrl: http://127.0.0.1:8081/demo/notifyResult
     tryTime: 30
   redis:
     savemaxtime: 30
