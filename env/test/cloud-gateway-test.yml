@@ -7,8 +7,8 @@ spring:
         locator:
           lowerCaseServiceId: true
       routes:
-        -   id: pf-web-api
-            uri: lb://pf-web-api
+        - id: web
+            uri: lb://web
             predicates:
               - Path=/webapi/**
 com:
