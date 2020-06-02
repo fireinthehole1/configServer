@@ -9,8 +9,8 @@ spring:
       max-active: 20
       filters: stat
       url: jdbc:mysql://127.0.0.1:3306/user-test?useSSL=false&useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull
-      username: '{cipher}edb9e0b245cbb83567f38152250227622859711566861eb85db43e6cee6174d5'
-      password: '{cipher}43eba75f4f33e85123bdb2c83ec8005f2d9f5f4190998394da4921cb7208e1b5'
+      username: '{cipher}3d16bd251ec9cab0e6ff892db10473a1fe99dfd5b091c20d302bc2f242c1d47c'
+      password: '{cipher}afd06011c932a5d452ba47b2e2d7f561bc4384c305a16605291e8e31bda8999b'
 mybatis-plus:
   mapper-locations[0]: classpath*:**/mapper/**/*Mapper.xml
 feign:
