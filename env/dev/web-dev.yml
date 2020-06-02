@@ -13,7 +13,7 @@ spring:
             max-active: 20
             filters: stat
             url: jdbc:mysql://127.0.0.1:3306/user-test?useSSL=false&useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&useAffectedRows=true
-            username: '{cipher}65982a3a4a4b466e7a97f2a3694101462378375424411b6b77d32dbbbdd443a3'
+            username: '{cipher}edb9e0b245cbb83567f38152250227622859711566861eb85db43e6cee6174d5'
             password: '{cipher}43eba75f4f33e85123bdb2c83ec8005f2d9f5f4190998394da4921cb7208e1b5'
 feign:
     hystrix:
