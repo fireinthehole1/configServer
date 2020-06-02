@@ -10,7 +10,7 @@ spring:
       filters: stat
       url: jdbc:mysql://127.0.0.1:3306/order-test?useSSL=false&useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull
       username: root
-      password: password
+      password: {cipher}a5aa7f30ec6d0fac7fb0cb34628dbf39c4179b7c87b868143d9f8184620c0bad
 mybatis-plus:
   mapper-locations[0]: classpath*:**/mapper/**/*Mapper.xml
 feign:
