@@ -3,6 +3,11 @@ server:
   servlet:
     path: /
 spring:
+  zipkin:
+    base-url: http://localhost:9009  #指定Zipkin server地址
+    sleuth:
+      sampler:
+        probability: 1.0
   datasource:
     druid:
       db-type: com.alibaba.druid.pool.DruidDataSource
