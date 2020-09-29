@@ -1,5 +1,5 @@
 server:
-  port: 9009
+  port: 9010
 turbine:
   app-config: WEB,CLOUD-USER,CLOUD-ORDER,CLOUD-GATEWAY
   cluster-name-expression: new String("default")
